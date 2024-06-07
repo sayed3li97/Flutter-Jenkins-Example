@@ -7,11 +7,11 @@ pipeline {
 //     }
 
     stages {
-//         stage('Checkout') {
-//             steps {
-//                 git branch: 'main', url: 'https://github.com/sayed3li97/Flutter-Jenkins-Example.git'
-//             }
-//         }
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/sayed3li97/Flutter-Jenkins-Example.git'
+            }
+        }
 
         stage('Setup Flutter') {
             steps {
@@ -37,11 +37,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                // Add your deployment steps here (e.g., copy to a server, deploy to Firebase, etc.)
-            }
-        }
+//         stage('Deploy') {
+//             steps {
+//                 // Add your deployment steps here (e.g., copy to a server, deploy to Firebase, etc.)
+//             }
+//         }
     }
 
     post {
