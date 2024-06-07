@@ -16,7 +16,7 @@ pipeline {
 
         stage('Setup Flutter') {
             steps {
-                sh 'flutter doctor'
+                sh '{env.SOURCE}; flutter doctor'
             }
         }
 
