@@ -9,9 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-            script {
                 git branch: 'main', url: 'https://github.com/sayed3li97/Flutter-Jenkins-Example.git'
-                }
             }
         }
 
