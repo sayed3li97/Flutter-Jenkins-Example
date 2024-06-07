@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-//     environment {
-//         FLUTTER_HOME = "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/alkamelsayedali/flutter"
-//         PATH = "$FLUTTER_HOME/bin:$PATH"
-//     }
+    environment {
+        FLUTTER_HOME = "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/alkamelsayedali/flutter"
+        PATH = "$FLUTTER_HOME/bin:$PATH"
+    }
 
     stages {
         stage('Checkout') {
