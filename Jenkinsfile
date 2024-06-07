@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        FLUTTER_HOME = "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/alkamelsayedali/flutter"
+        FLUTTER_HOME = "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/alkamelsayedali/flutter/bin"
         PATH = "$FLUTTER_HOME/bin:$PATH"
     }
 
