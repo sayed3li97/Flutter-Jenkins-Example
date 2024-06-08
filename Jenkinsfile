@@ -14,11 +14,11 @@ pipeline {
             }
         }
 
-//         stage('Setup Flutter') {
-//             steps {
-//                 sh 'flutter doctor'
-//             }
-//         }
+        stage('Setup Flutter') {
+            steps {
+                sh 'flutter doctor'
+            }
+        }
 
         stage('Get Dependencies') {
             steps {
