@@ -22,7 +22,6 @@ pipeline {
 
         stage('Get Dependencies') {
             steps {
-            sh 'sudo chown -R $(whoami) /home/alkamelsayedali/flutter/bin/cache/lockfile'
                 sh 'flutter pub get'
             }
         }
